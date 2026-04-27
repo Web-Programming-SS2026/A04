@@ -1,5 +1,3 @@
-import DATA from "./data.js";
-
 import App from "./app.js";
 import DATA from "./data.js";
 import Department from "./dept.js";
@@ -37,10 +35,10 @@ const testApp = () => {
   student = app.enrol("rschraml", "CS");
   console.assert(student === rudolf, "App.enrol return value mismatch");
   console.assert(rudolf.dept === "Computer Science", "Student.dept mismatch after enrolment");
-  
+
   let amoore = app.enrol("amoore", "CS");
 
-  
+
   let grads = app.graduate("CS");
   console.assert(grads.length === 1 && grads[0] === amoore, "App.graduate return value mismatch");
   console.assert(amoore.isAlum === true && rudolf.isAlum === false, "Student.isGraduated mismatch");
