@@ -34,11 +34,11 @@ const testApp = () => {
   console.assert(cs.name === "Computer Science", "Department.name mismatch");
   console.assert(cs.students.length === 0, "Department.students mismatch");
 
-  student = app.declare("rschraml", "CS");
-  console.assert(student === rudolf, "App.declare return value mismatch");
-  console.assert(rudolf.dept === "Computer Science", "Student.dept mismatch after declare");
+  student = app.enrol("rschraml", "CS");
+  console.assert(student === rudolf, "App.enrol return value mismatch");
+  console.assert(rudolf.dept === "Computer Science", "Student.dept mismatch after enrolment");
   
-  let amoore = app.declare("amoore", "CS");
+  let amoore = app.enrol("amoore", "CS");
 
   
   let grads = app.graduate("CS");

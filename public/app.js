@@ -12,7 +12,7 @@ export default class App {
     //TODO
   }
 
-  declare(sunetid, deptCode) {
+  enrol(userId, deptCode) {
     //TODO
   }
 
